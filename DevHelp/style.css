@@ -698,6 +698,9 @@ ul{
     flex-direction: column;
     gap: 1.2rem;
 }
+.footer-link:hover{
+    color: var(--link-color);
+}
 .footer-grid-heading{
     margin-bottom: 1.65rem;
 }
