@@ -28,7 +28,7 @@ window.onscroll = () => {
         }
 
         //If Want To Use Animation that Reapeats On Scroll Use This
-        else{
+        else {
             sec.classList.remove('show-animate');
         }
 
@@ -40,4 +40,9 @@ window.onscroll = () => {
     // Remove Toggle Icon And Navbar When Click Navbar Links (Scroll)
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
+
+    //Animation Footer On Scroll
+    let Footer = document.querySelector('footer');
+
+    Footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >=document.scrollingElement.scrollHeight);
 }
