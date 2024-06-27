@@ -396,29 +396,29 @@
         <form action="#">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Address" required>
+                    <input type="text" placeholder="Email Address" id="email" class="item" autocomplete="off" required>
                     <span class="focus"></span>
                 </div>
                 <span class="animate scroll" style="--i:3;"></span>
             </div>
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Mobile number" required>
+                    <input type="number" placeholder="Mobile number" id="phone" class="item" autocomplete="off" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
+                    <input type="text" placeholder="Email Subject" id="subject" class="item" autocomplete="off" required>
                     <span class="focus"></span>
                 </div>
                 <span class="animate scroll" style="--i:5;"></span>
             </div>
 
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <textarea name="" id="massage" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off" required></textarea>
                 <span class="focus"></span>
                 <span class="animate scroll" style="--i:7;"></span>
             </div>
@@ -440,7 +440,7 @@
             <span class="animate scroll" style="--i:3;"></span>
         </div>
     </footer>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
 </body>
 

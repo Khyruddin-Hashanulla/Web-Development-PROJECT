@@ -44,5 +44,27 @@ window.onscroll = () => {
     //Animation Footer On Scroll
     let Footer = document.querySelector('footer');
 
-    Footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >=document.scrollingElement.scrollHeight);
+    Footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 }
+//Contact Section 
+
+const form = document.querySelector("form");
+
+function sendEmail() {
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "business.khyruddin@gmail.com",
+        Password: "0FF60F38B296281C1169AA71848A11787998",
+        To: 'business.khyruddin@gmail.com',
+        From: "business.khyruddin@gmail.com",
+        Subject: "This is the subject",
+        Body: "And this is the body"
+    }).then(
+        message => alert(message)
+    );
+}
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    sendEmail();
+});
